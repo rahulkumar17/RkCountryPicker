@@ -17,6 +17,13 @@
 		E45B0D3228F5592E00DD56BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45B0D3028F5592E00DD56BD /* Main.storyboard */; };
 		E45B0D3428F5593000DD56BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45B0D3328F5593000DD56BD /* Assets.xcassets */; };
 		E45B0D3728F5593000DD56BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45B0D3528F5593000DD56BD /* LaunchScreen.storyboard */; };
+		E45B0D4728F56C1B00DD56BD /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = E45B0D3E28F56C1B00DD56BD /* countries.json */; };
+		E45B0D4828F56C1B00DD56BD /* CountryPickerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B0D3F28F56C1B00DD56BD /* CountryPickerVM.swift */; };
+		E45B0D4928F56C1B00DD56BD /* CountryPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B0D4128F56C1B00DD56BD /* CountryPickerModel.swift */; };
+		E45B0D4A28F56C1B00DD56BD /* CountryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45B0D4328F56C1B00DD56BD /* CountryTVC.xib */; };
+		E45B0D4B28F56C1B00DD56BD /* CountryListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B0D4428F56C1B00DD56BD /* CountryListManager.swift */; };
+		E45B0D4C28F56C1B00DD56BD /* CountryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B0D4528F56C1B00DD56BD /* CountryTVC.swift */; };
+		E45B0D4D28F56C1B00DD56BD /* CountryListManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45B0D4628F56C1B00DD56BD /* CountryListManager.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,13 @@
 		E45B0D3328F5593000DD56BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45B0D3628F5593000DD56BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45B0D3828F5593000DD56BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45B0D3E28F56C1B00DD56BD /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		E45B0D3F28F56C1B00DD56BD /* CountryPickerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerVM.swift; sourceTree = "<group>"; };
+		E45B0D4128F56C1B00DD56BD /* CountryPickerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerModel.swift; sourceTree = "<group>"; };
+		E45B0D4328F56C1B00DD56BD /* CountryTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryTVC.xib; sourceTree = "<group>"; };
+		E45B0D4428F56C1B00DD56BD /* CountryListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryListManager.swift; sourceTree = "<group>"; };
+		E45B0D4528F56C1B00DD56BD /* CountryTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTVC.swift; sourceTree = "<group>"; };
+		E45B0D4628F56C1B00DD56BD /* CountryListManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryListManager.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,7 @@
 		E45B0D0C28F557C500DD56BD /* RKCOUNTRYPICKER */ = {
 			isa = PBXGroup;
 			children = (
+				E45B0D3C28F56C1B00DD56BD /* CountryHelper */,
 				E45B0D0D28F557C500DD56BD /* RKCOUNTRYPICKER.h */,
 				E45B0D0E28F557C500DD56BD /* RKCOUNTRYPICKER.docc */,
 			);
@@ -120,6 +135,44 @@
 				E45B0D3828F5593000DD56BD /* Info.plist */,
 			);
 			path = RKCOUNTRYPICKERExample;
+			sourceTree = "<group>";
+		};
+		E45B0D3C28F56C1B00DD56BD /* CountryHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E45B0D3D28F56C1B00DD56BD /* ViewModel */,
+				E45B0D4028F56C1B00DD56BD /* Model */,
+				E45B0D4228F56C1B00DD56BD /* View */,
+			);
+			path = CountryHelper;
+			sourceTree = "<group>";
+		};
+		E45B0D3D28F56C1B00DD56BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E45B0D3E28F56C1B00DD56BD /* countries.json */,
+				E45B0D3F28F56C1B00DD56BD /* CountryPickerVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E45B0D4028F56C1B00DD56BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E45B0D4128F56C1B00DD56BD /* CountryPickerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45B0D4228F56C1B00DD56BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E45B0D4328F56C1B00DD56BD /* CountryTVC.xib */,
+				E45B0D4428F56C1B00DD56BD /* CountryListManager.swift */,
+				E45B0D4528F56C1B00DD56BD /* CountryTVC.swift */,
+				E45B0D4628F56C1B00DD56BD /* CountryListManager.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45B0D4D28F56C1B00DD56BD /* CountryListManager.xib in Resources */,
+				E45B0D4A28F56C1B00DD56BD /* CountryTVC.xib in Resources */,
+				E45B0D4728F56C1B00DD56BD /* countries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45B0D4928F56C1B00DD56BD /* CountryPickerModel.swift in Sources */,
+				E45B0D4C28F56C1B00DD56BD /* CountryTVC.swift in Sources */,
 				E45B0D0F28F557C500DD56BD /* RKCOUNTRYPICKER.docc in Sources */,
+				E45B0D4B28F56C1B00DD56BD /* CountryListManager.swift in Sources */,
+				E45B0D4828F56C1B00DD56BD /* CountryPickerVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +551,7 @@
 		E45B0D2228F557C500DD56BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -506,6 +567,7 @@
 		E45B0D2328F557C500DD56BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
